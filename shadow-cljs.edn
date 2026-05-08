@@ -13,6 +13,7 @@
         :target :browser
         :output-dir "public/js"
         :asset-path "/js"
+        :devtools {:watch-dir "public"}
         :main "pizza.picker"
         :modules {:main {:entries [pizza.picker]
                          :init-fn pizza.picker/main}}}}}
