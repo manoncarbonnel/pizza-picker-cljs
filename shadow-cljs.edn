@@ -1,0 +1,17 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/main"
+  "src/test"]
+
+ :dependencies
+ [[reagent "2.0.1"]]
+
+ :dev-http {9000 "public"}
+
+ :builds
+ {:app {:target :browser
+        :output-dir "public/js"
+        :asset-path "/js"
+        :main "pizza.picker"
+        :modules {:main {:entries [pizza.picker]
+                         :init-fn pizza.picker/main}}}}}

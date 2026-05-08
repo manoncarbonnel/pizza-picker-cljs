@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+
+# IDE
+.idea
+.calva
+
+# Cache
+.lsp
+.clj-kondo/.cache
+
+# Build
+.shadow-cljs
+
+# Dependencies
+node_modules/
+
+# Output
+public/js
