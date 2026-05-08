@@ -9,7 +9,8 @@
  :dev-http {9000 "public"}
 
  :builds
- {:app {:target :browser
+ {:app {:js-options {:entry-keys ["module" "browser" "main"]}
+        :target :browser
         :output-dir "public/js"
         :asset-path "/js"
         :main "pizza.picker"

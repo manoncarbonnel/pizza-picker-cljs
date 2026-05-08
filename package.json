@@ -2,19 +2,25 @@
   "name": "pizza-picker-cljs",
   "version": "1.0.0",
   "description": "Pizza Picker in ClojureScript",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "watch": "shadow-cljs watch app",
     "compile": "shadow-cljs compile app",
-    "release": "shadow-cljs release app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "shadow-cljs release app"
   },
-  "keywords": [],
+  "keywords": [
+    "pizza",
+    "meetup",
+    "ClojureScript"
+  ],
   "author": "Manon Carbonnel & Mathieu Lirzin",
   "license": "ISC",
   "packageManager": "pnpm@10.20.0",
   "devDependencies": {
+    "process": "^0.11.10",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "scheduler": "^0.27.0",
     "shadow-cljs": "3.4.9"
   }
 }
